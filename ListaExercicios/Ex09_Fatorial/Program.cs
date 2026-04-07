@@ -1,2 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Digite um número:");
+int numero = int.Parse(Console.ReadLine());
+
+int fatorial = 1;
+for (int i = 1; i <= numero; i++)
+{
+    fatorial *= i;
+}
+System.Console.WriteLine($"O fatorial de {numero} é: {fatorial}");
